@@ -4,13 +4,14 @@ $mainFont: Poppins, sans-serif;
 
 
 
+
 h1, h2, h3, h4{
-	color: white;
+	color: $secondary;
+	padding: 10px;
+	font-weight: 600;
 }
 h1{
 	font-size: 2.5rem;
-	font-weight: 600;
-	padding: 10px;
 	line-height: 3rem;
 	text-align: center;
 	text-decoration: none;
@@ -19,22 +20,16 @@ h1{
 h2{
 	/*afecta los h2 de todos htmls*/
 	font-size: 2rem;
-	font-weight: 600;
-	padding: 10px;
 	line-height: 2.5rem;
 }
 
 h3{
 	font-size: 1.5rem;
-	font-weight: 600;
 	line-height: 2rem;
-	color: white;
-	padding: 10px;
 }
 	
 h4{
 	font-size: 1.2rem;
-	font-weight: 600;
 }
 
 p{
@@ -44,33 +39,25 @@ p{
 
 @media only screen and 	(min-width: 768px){
 
-
-	
-
 	h2{
 		font-size: 3rem;
-		font-weight: 600;
 		padding: 20px;
 	}
 
 	h3{
-	font-size: 2.5rem;
-	font-weight: 600;
-	line-height: 3rem;
+		font-size: 2.5rem;
+		line-height: 3rem;
 	}
 
 	h4{
-	font-size: 2rem;
-	font-weight: 600;
+		font-size: 2rem;
 	}
 }
 
 @media only screen and 	(min-width: 992px){
 
-
 	h1{
 		font-size: 3rem;
-		font-weight: 600;
 		padding: 20px;
 		line-height: 3.5rem;
 	}

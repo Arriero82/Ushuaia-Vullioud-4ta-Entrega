@@ -1,5 +1,16 @@
 // Definimos varialbes globales
 
+// scss-docs-start theme-color-variables
+$primary:       black;
+$secondary:     white;
+$success:       blue;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+$light:         lightgreen;
+$dark:          darkgreen;
+// scss-docs-end theme-color-variables
+
 *{
 	padding: 0;
 	margin: 0;
