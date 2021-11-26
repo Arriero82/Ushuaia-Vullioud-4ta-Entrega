@@ -1,0 +1,30 @@
+// Definimos varialbes globales
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+html{
+		font-size: 62.5%;
+}
+
+
+/*GRIDS*/
+
+.grid-layout{
+
+	display: grid;
+	grid-template-areas: 'header header'
+				 		 		'main main'
+				 		 		'footer footer';
+	grid-template-rows: 0.6fr auto 1fr;
+}
+
+
+
+
+
+
+
+

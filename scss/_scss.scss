@@ -1,0 +1,48 @@
+//DESAFIO SASS II
+@for $i from 2 to 5{
+	.ushuaia0#{($i - 1)}{
+		width: 10vw *$i;
+	}
+}
+
+@for $i from 1 through 3{
+	.bg-gradiente0#{$i}{
+	background-color: rgba(0,0,0, $i * 0.05);
+	}
+}
+
+.p1{
+	color: white;
+	font-size: 2rem;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+.p2{
+	@extend .p1;
+		color: blue;
+		font-weight: 600;
+}
+
+.p3{
+	@extend .p2;
+	text-align: right;
+}
+
+@mixin par($font-size, $line-height, $color){
+	font-size: $font-size;
+	line-height: $line-height;
+	color: $color;
+}
+
+.par{
+	@include par(2rem, 2.5rem, black)
+}
+
+.par2{
+	@include par(3rem, 4rem, white)
+}
+//FINALIZA DESAFIO SASS II
+
+//DESAFIO COMPLEMENTARIO SASS II
+

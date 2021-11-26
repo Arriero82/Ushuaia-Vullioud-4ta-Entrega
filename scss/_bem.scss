@@ -1,0 +1,80 @@
+.section{
+	display: flex;
+	justify-content: center;
+}
+
+.section__article--izq{
+	display: flex;
+	max-width: 50%;
+}
+
+.section__article--der{
+	display: flex;
+	max-width: 50%;
+}
+
+.article1{
+	background-color: lightgreen;
+}
+
+.article1__parrafo--rojo{
+	color: red;
+}
+
+.article2{
+	background-color: lightblue;
+}
+
+.article2__parrafo--negro{
+	color: black;
+}
+
+.main{
+	text-align: center;
+}
+
+.main__video--ancho{
+	width: 70vw;
+}
+
+.aside{
+	background-image: url(../img/bem.jpg);
+}
+
+.aside__titulo--size{
+	font-size: 4rem;
+	line-height: 4.5rem;
+}
+
+.contenedor{
+	display: flex;
+}
+
+.contenedor__articulo--izq{
+	display: flex;
+	max-width: 40%;
+}
+
+.contenedor__bg--gradiente1{
+	background-color: rgba(255,255,80,.3);
+}
+
+.contenedor__bg--gradiente2{
+	background-color: rgba(255,255,80,.7);
+}
+
+.div{
+	text-align: center;
+}
+
+.div__titulo--azul{
+	color: blue;
+}
+
+.div__parrafo--azul{
+	color: blue;
+}
+
+
+
+

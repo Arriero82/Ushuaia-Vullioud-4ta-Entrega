@@ -1,0 +1,362 @@
+/*GENERAL SETTINGS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+*{
+		margin: 0;
+		padding: 0;
+}
+
+html{
+		font-size: 62.5%;
+}
+
+body{
+	font-size: 1.2rem;
+	font-family: Poppins, sans-serif;
+	line-height: 1.5rem;
+	/*background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../img/background-image.jpg"); bajarle opacidad a una imagen de fondo y no al resto*/
+	font-weight: 300;
+	color: white;
+	margin: 5px;
+	height: 100vh;
+	width: 100vw;
+	margin: auto;
+	background-color: darkgreen;	
+}
+
+/*GRIDS*/
+
+.grid-layout{
+
+	display: grid;
+	grid-template-areas: 'header header'
+				 		 		'main main'
+				 		 		'footer footer';
+	grid-template-rows: 0.6fr auto 1fr;
+}
+
+.grid-layout2{
+	display: grid;
+	grid-template-areas: 'header1 header1'
+								'header2 header2';
+	grid-template-rows: auto auto;
+}
+
+.header{
+	grid-area: header;
+	background-color: rgba(0, 100, 255);	
+}
+
+.header1{
+	grid-area: header1;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header2{
+	grid-area: header2;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.main{
+	grid-area: main;
+	background-color: darkgreen;
+	text-align: center;
+}
+
+.footer{
+	grid-area: footer;
+	background: linear-gradient(to bottom, rgb(0,100,0), rgb(0,100,255));
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	bottom: 0;
+}
+
+.navImg{
+	max-width: 90%;
+	margin: auto;
+	padding: 5px;
+}
+
+/*NAV*/
+
+
+a{
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+}
+
+   a:hover{
+	      color: black;
+	      transition: 1s;
+	}
+
+.aD{
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+}
+
+   .aD:hover{
+	      color: black;
+	      transition: 1s;
+	}
+
+
+
+
+	.right:hover{
+		transform: translateX(5px);
+		transition: 1s;
+}
+
+	.scale:hover{
+		transform: scale(1.1);
+		transition: 1s;
+}
+
+	#navColor{
+	background-color: transparent;
+	align-items: flex-start;
+	color: white;
+}
+
+
+
+/*TEXTS*/
+
+h2{
+	/*afecta los h2 de todos htmls*/
+	font-size: 2rem;
+	font-weight: 600;
+	padding: 10px 0;
+	line-height: 2.5rem;
+	color: white;
+}
+
+h1, h3, h4{
+	color: white;
+}
+h1{
+	font-size: 2.5rem;
+	font-weight: 600;
+	padding: 10px;
+	line-height: 2.5rem;
+	text-align: center;
+}
+
+h3{
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 2rem;
+	color: white;
+}
+	
+h4{
+	font-size: 1.2rem;
+	font-weight: 600;
+}
+
+p{
+	text-align: left;
+	padding: 10px;
+}
+
+/*INDEX VIDEO*/
+#mainVideo{
+	width: 80vw;
+}
+
+/*FOOTER*/
+
+.textoFooter{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.social{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.saltoLinea{
+	display: block;
+	padding: 5px;
+}
+
+.space{
+	margin: 0 5px;
+}
+
+
+
+/*GEOGRAFIA AND DATOS_UTILES LISTS*/
+.ul{
+	text-align: left;
+	list-style: none;
+	padding: 10px;
+}
+
+#a{
+	font-size: 1rem;
+	font-family: Poppins, sans-serif;
+	line-height: 1.5rem;
+	font-weight: 600;
+}
+
+span{
+	font-weight: 600;
+}
+
+/*DATOS UTILES*/
+
+	
+/*IMAGES*/
+
+img{ /*affects historia.html and geografia.html*/
+	max-width: 300px;
+}
+
+/*DATOS UTILES*/
+
+.dir{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#bgAccordion{
+	background-color: darkgreen;	
+}
+/*MEDIA QUERIES*/
+
+@media only screen and 	(min-width: 576px){
+	body{
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+
+}
+
+@media only screen and 	(min-width: 768px){
+
+	.grid-layout2{
+	display: grid;
+	grid-template-areas: 'header1 header2'
+								;
+	grid-template-rows: auto auto;
+	}
+
+	.right:hover{
+	transform: translateY(-5px);
+	transition: 1s;
+	}
+
+	.header1{
+	justify-content: flex-start;
+	}
+
+	.header2{
+	justify-content: space-evenly;
+	}
+
+	body{
+		font-size: 2rem;
+		line-height: 2.5rem;
+	}
+
+
+	a{
+	  	font-size: 1.3rem;
+	}
+
+	h2{
+		font-size: 3rem;
+		font-weight: 600;
+		padding: 20px;
+	}
+
+	h3{
+	font-size: 2.5rem;
+	font-weight: 600;
+	line-height: 3rem;
+	}
+
+	h4{
+	font-size: 2rem;
+	font-weight: 600;
+	}
+
+	.main{
+		grid-area: main;
+		text-align: center;
+		padding: 10px;
+	}
+
+  	ul li:hover ul {
+	    display:block;
+	}
+
+	img{
+		max-width: 350px;
+	}
+
+	#a{
+	font-size: 2rem;
+	line-height: 2.5rem;
+	}
+
+}
+
+
+@media only screen and 	(min-width: 992px){
+
+
+	h1{
+		font-size: 3rem;
+		font-weight: 600;
+		padding: 20px;
+		line-height: 3.5rem;
+	}
+
+	a{
+  	color: white;
+  	text-decoration: none;
+  	font-size: 2rem;
+	}
+
+	img{
+		max-width: 550px;
+	}
+
+
+	/*que_hacer*/
+
+	.titulo{
+		text-align: left;
+	}
+
+	.flexDiv{
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 5rem;
+	}
+
+	.parrafo{
+		display: flex;
+		align-items: center;
+	}
+
+}
