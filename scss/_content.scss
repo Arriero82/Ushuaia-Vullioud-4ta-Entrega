@@ -7,7 +7,7 @@ body {
     color: $secondary;
     margin: 5px;
     height: 100vh;
-    width: 100vw;
+    width: 99vw;
     margin: auto;
     background-color: $dark;
 }
@@ -39,7 +39,7 @@ li {
     color: $secondary;
     font-weight: 600;
     &:hover{
-        color: $primary;
+        color: $success;
         transition: 1s;    
     }
 }
@@ -81,7 +81,7 @@ span {
 
 .img {
     /*affects historia.html and geografia.html*/
-    max-width: 300px;
+    max-width: 290px;
     border-radius: 6px;
     border: 1px solid #ddd;
     padding: 5px;
@@ -97,6 +97,10 @@ span {
 
 #bgAccordion {
     background-color: $dark;
+}
+
+.minHeight{
+    min-height: 750px;
 }
 
 /*404*/
