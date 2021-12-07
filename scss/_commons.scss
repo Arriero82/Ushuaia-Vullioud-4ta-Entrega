@@ -1,16 +1,5 @@
 // Definimos varialbes globales
 
-// scss-docs-start theme-color-variables
-$primary:       black;
-$secondary:     white;
-$success:       blue;
-$info:          $cyan;
-$warning:       $yellow;
-$danger:        $red;
-$light:         lightgreen;
-$dark:          darkgreen;
-// scss-docs-end theme-color-variables
-
 *{
 	padding: 0;
 	margin: 0;
@@ -20,6 +9,16 @@ html{
 		font-size: 62.5%;
 }
 
+// scss-docs-start theme-color-variables
+$primary:       white;
+$secondary:     black;
+$success:       blue;
+$info:          #C09247;
+$warning:       $yellow;
+$danger:        $red;
+$light:         #CAB387;
+$dark:          #F2EBE0;
+// scss-docs-end theme-color-variables
 
 /*GRIDS*/
 
@@ -29,7 +28,7 @@ html{
 	grid-template-areas: 'header header'
 				 		 		'main main'
 				 		 		'footer footer';
-	grid-template-rows: 0.6fr auto 1fr;
+	grid-template-rows: 0.4fr auto 1fr;
 }
 
 

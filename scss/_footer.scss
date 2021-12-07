@@ -1,6 +1,6 @@
 .footer{
 	grid-area: footer;
-	background: linear-gradient(to bottom, rgb(0,100,0), rgb(0,100,255));
+	background: linear-gradient(to bottom, $dark, $light);
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -14,18 +14,10 @@
 	justify-content: center;
 }
 
-.social{
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+.rotate{
+	&:hover{
+		transform: rotate(360deg);
+		transition: 1.5s;
+	}
 }
 
-.saltoLinea{
-	display: block;
-	padding: 5px;
-}
-
-.space{
-	margin: 0 5px;
-}

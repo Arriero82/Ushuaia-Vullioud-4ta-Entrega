@@ -1,13 +1,13 @@
 nav{
 	background-color: transparent;
 	align-items: flex-start;
-	color: white;
+	color: $secondary;
 	div{
 		div{
 			ul{
 				li{
 					a{
-					color: white;
+					color: $primary;
       				text-decoration: none;
       				font-weight: 600;
 					}
@@ -27,7 +27,7 @@ nav{
 
 .header{
 	grid-area: header;
-	background-color: rgb(0, 100, 255);	
+	background-color:  $info;	
 }
 
 .header1{
@@ -47,25 +47,19 @@ nav{
 }
 
 
-.navImg{
-	max-width: 90%;
-	margin: auto;
-	padding: 5px;
-}
-
 #navColor{
 	background-color: transparent;
 }
 
 	#navColor a{
-		color: white;
+		color: $secondary;
+		&:hover{
+			transform: translateX(5px);
+			background-color: transparent;
+			color: $primary;
+			transition: 1s;
+		}
 	}
-
-	.right:hover{
-		transform: translateX(5px);
-		background-color: transparent;
-		transition: 1s;
-}
 
 	.scale:hover{
 		transform: scale(1.1);
@@ -81,9 +75,12 @@ nav{
 	grid-template-rows: auto auto;
 	}
 
-	.right:hover{
-	transform: translateY(-5px);
-	transition: 1s;
+	#navColor a{
+		&:hover{
+			transform: translateY(-5px);
+
+			transition: 1s;
+		}
 	}
 
 	.header1{
@@ -103,7 +100,7 @@ nav{
 
 
 	a{
-  	color: white;
+  	color: $secondary;
   	text-decoration: none;
   	font-size: 2rem;
 	}
