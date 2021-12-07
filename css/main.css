@@ -7821,7 +7821,7 @@ html {
 .grid-layout {
   display: grid;
   grid-template-areas: 'header header' 'main main' 'footer footer';
-  grid-template-rows: 0.4fr auto 1fr; }
+  grid-template-rows: 0.5fr auto 1fr; }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
   color: black;
@@ -8019,8 +8019,7 @@ nav {
 
 .header {
   grid-area: header;
-  background-color: #C09247;
-  min-height: 70px; }
+  background-color: #C09247; }
 
 .header1 {
   grid-area: header1;
@@ -8058,19 +8057,24 @@ nav {
   transition: 1s; }
 
 @media only screen and (min-width: 576px) {
+  .grid-layout2 {
+    grid-template-areas: 'header1 header2'; }
   .header1 {
-    justify-content: flex-start; } }
+    justify-content: flex-start;
+    min-height: 70px; }
+  .header2 {
+    justify-content: flex-end;
+    margin-right: 20px; } }
 
 @media only screen and (min-width: 768px) {
   .grid-layout2 {
-    display: grid;
-    grid-template-areas: 'header1 header2';
-    grid-template-rows: auto auto; }
+    grid-template-areas: 'header1 header2'; }
   #navColor a:hover {
     transform: translateY(-5px);
     transition: 1s; }
   .header1 {
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    min-height: 80px; }
   .header2 {
     justify-content: space-evenly; }
   a {
