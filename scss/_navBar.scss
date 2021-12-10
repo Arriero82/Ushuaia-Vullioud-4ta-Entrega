@@ -56,11 +56,13 @@ nav{
 #navColor{
 	background-color: transparent;
 	border-color: transparent;
+	font-size: 1.5rem;
 }
 
 	#navColor a{
 		color: $secondary;
 		background-color: transparent;
+		font-size: 1.5rem;
 		&:hover{
 			font-weight: 600;
 			transform: translateX(5px);
@@ -74,7 +76,7 @@ nav{
 @media only screen and 	(min-width: 576px){
 
 	.grid-layout2{
-	grid-template-areas: 'header1 header2';
+		rid-template-areas: 'header1 header2';
 	}
 
 	.header1{
@@ -83,8 +85,8 @@ nav{
 	}
 
 	.header2{
-	justify-content: flex-end;
-	margin-right: 20px;
+		justify-content: flex-end;
+		margin-right: 20px;
 	}
 
 }
@@ -115,17 +117,17 @@ nav{
 	justify-content: space-evenly;
 	}
 
-	a{
-	  	font-size: 1.3rem;
-	}
+
 }
 
 @media only screen and 	(min-width: 992px){
 
-
-	a{
-  	color: $secondary;
-  	text-decoration: none;
-  	font-size: 2rem;
+	#navColor{
+		font-size: 2rem;
 	}
+
+		#navColor a{
+			font-size: 2rem;
+		}
+
 }

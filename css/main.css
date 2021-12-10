@@ -7987,8 +7987,6 @@ span {
 @media only screen and (min-width: 992px) {
   .img {
     max-width: 940px; }
-  .titulo {
-    text-align: left; }
   .flexDiv {
     display: flex;
     flex-direction: row;
@@ -8036,11 +8034,13 @@ nav {
 
 #navColor {
   background-color: transparent;
-  border-color: transparent; }
+  border-color: transparent;
+  font-size: 1.5rem; }
 
 #navColor a {
   color: black;
-  background-color: transparent; }
+  background-color: transparent;
+  font-size: 1.5rem; }
   #navColor a:hover {
     font-weight: 600;
     transform: translateX(5px);
@@ -8049,7 +8049,7 @@ nav {
 
 @media only screen and (min-width: 576px) {
   .grid-layout2 {
-    grid-template-areas: 'header1 header2'; }
+    rid-template-areas: 'header1 header2'; }
   .header1 {
     justify-content: flex-start;
     min-height: 70px; }
@@ -8072,14 +8072,12 @@ nav {
     justify-content: flex-start;
     min-height: 80px; }
   .header2 {
-    justify-content: space-evenly; }
-  a {
-    font-size: 1.3rem; } }
+    justify-content: space-evenly; } }
 
 @media only screen and (min-width: 992px) {
-  a {
-    color: black;
-    text-decoration: none;
+  #navColor {
+    font-size: 2rem; }
+  #navColor a {
     font-size: 2rem; } }
 
 .footer {
