@@ -21,7 +21,7 @@ nav{
 .grid-layout2{
 	display: grid;
 	grid-template-areas: 'header1 header1'
-							'header2 header2';
+						 'header2 header2';
 	grid-template-rows: auto auto;
 }
 
@@ -55,23 +55,21 @@ nav{
 
 #navColor{
 	background-color: transparent;
+	border-color: transparent;
 }
 
 	#navColor a{
 		color: $secondary;
 		background-color: transparent;
 		&:hover{
+			font-weight: 600;
 			transform: translateX(5px);
-			color: $success;
 			background-color: transparent;
 			transition: 1s;
 		}
 	}
 
-	.scale:hover{
-		transform: scale(1.1);
-		transition: 1s;
-}
+
 
 @media only screen and 	(min-width: 576px){
 
@@ -93,14 +91,18 @@ nav{
 
 @media only screen and 	(min-width: 768px){
 
-	.grid-layout2{
+	.grid-layout2{	
 	grid-template-areas: 'header1 header2';
 	}
 
 	#navColor a{
-		&:hover{
-			transform: translateY(-5px);
-			transition: 1s;
+	color: $secondary;
+	background-color: $info;
+	&:hover{
+		transform: translateY(-5px);
+		background-color: $info;
+		transition: 1s;
+		border-radius: 10px;
 		}
 	}
 

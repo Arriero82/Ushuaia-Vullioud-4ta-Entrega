@@ -7835,7 +7835,6 @@ h1, .h1 {
   text-decoration: none; }
 
 h2, .h2 {
-  /*afecta los h2 de todos htmls*/
   font-size: 2rem;
   line-height: 2.5rem; }
 
@@ -7850,15 +7849,25 @@ p {
   text-align: left;
   padding: 10px; }
 
+@media only screen and (min-width: 576px) {
+  h3, .h3 {
+    font-size: 2rem;
+    line-height: 2.5rem; }
+  h4, .h4 {
+    font-size: 1.5rem;
+    line-height: 2rem; } }
+
 @media only screen and (min-width: 768px) {
   h2, .h2 {
     font-size: 3rem;
+    line-height: 3.5rem;
     padding: 20px; }
   h3, .h3 {
     font-size: 2.5rem;
     line-height: 3rem; }
   h4, .h4 {
-    font-size: 2rem; } }
+    font-size: 2rem;
+    line-height: 2.5rem; } }
 
 @media only screen and (min-width: 992px) {
   h1, .h1 {
@@ -7866,11 +7875,11 @@ p {
     padding: 20px;
     line-height: 3.5rem; } }
 
+/*GENERAL SETTINGS*/
 body {
   font-size: 1.2rem;
   font-family: Poppins, sans-serif;
   line-height: 1.5rem;
-  /*background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../img/background-image.jpg"); bajarle opacidad a una imagen de fondo y no al resto*/
   font-weight: 300;
   color: black;
   margin: 5px;
@@ -7884,24 +7893,17 @@ main {
   background-color: #F2EBE0;
   text-align: center; }
 
-li {
-  text-decoration: none; }
-  li a {
-    color: black;
-    font-weight: 600; }
-    li a a:hover {
-      color: white;
-      transition: 1s; }
-
-.titulo {
-  text-decoration: none; }
-
+/*LINKS*/
 .aD {
   color: black;
   font-weight: 600; }
   .aD:hover {
     color: grey;
     transition: 1s; }
+
+.scale:hover {
+  transform: scale(1.1);
+  transition: 1s; }
 
 /*CARDS*/
 .cardP {
@@ -7918,19 +7920,13 @@ li {
 #bg-info {
   background-color: #F2EBE0; }
 
-/*GEOGRAFIA AND DATOS_UTILES LISTS*/
-.ul {
-  text-align: left;
-  list-style: none;
-  padding: 10px; }
-
+/*GEOGRAFIA*/
 span {
   font-weight: 600; }
 
 /*IMAGES*/
 .img {
-  /*affects historia.html and geografia.html*/
-  max-width: 290px;
+  max-width: 300px;
   border-radius: 6px;
   border: 1px solid #ddd;
   padding: 5px; }
@@ -7949,7 +7945,7 @@ span {
 
 /*404*/
 .img-404 {
-  height: 30vh;
+  height: 22vh;
   background-image: url(../img/seal-404.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -7970,6 +7966,8 @@ span {
   body {
     font-size: 1.5rem;
     line-height: 2rem; }
+  .img {
+    max-width: 500px; }
   .img-404 {
     height: 40vh; } }
 
@@ -7981,14 +7979,14 @@ span {
     grid-area: main;
     padding: 10px; }
   .img {
-    max-width: 350px; }
+    max-width: 720px; }
   .img-404 {
     height: 435px;
     width: 576px; } }
 
 @media only screen and (min-width: 992px) {
   .img {
-    max-width: 550px; }
+    max-width: 940px; }
   .titulo {
     text-align: left; }
   .flexDiv {
@@ -7998,10 +7996,6 @@ span {
   .parrafo {
     display: flex;
     align-items: center; } }
-
-@media only screen and (min-width: 1200px) {
-  .img {
-    max-width: 650px; } }
 
 nav {
   background-color: transparent;
@@ -8041,20 +8035,17 @@ nav {
   padding: 5px; }
 
 #navColor {
-  background-color: transparent; }
+  background-color: transparent;
+  border-color: transparent; }
 
 #navColor a {
   color: black;
   background-color: transparent; }
   #navColor a:hover {
+    font-weight: 600;
     transform: translateX(5px);
-    color: grey;
     background-color: transparent;
     transition: 1s; }
-
-.scale:hover {
-  transform: scale(1.1);
-  transition: 1s; }
 
 @media only screen and (min-width: 576px) {
   .grid-layout2 {
@@ -8069,9 +8060,14 @@ nav {
 @media only screen and (min-width: 768px) {
   .grid-layout2 {
     grid-template-areas: 'header1 header2'; }
-  #navColor a:hover {
-    transform: translateY(-5px);
-    transition: 1s; }
+  #navColor a {
+    color: black;
+    background-color: #C09247; }
+    #navColor a:hover {
+      transform: translateY(-5px);
+      background-color: #C09247;
+      transition: 1s;
+      border-radius: 10px; }
   .header1 {
     justify-content: flex-start;
     min-height: 80px; }

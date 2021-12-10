@@ -1,8 +1,9 @@
+/*GENERAL SETTINGS*/
+
 body {
     font-size: 1.2rem;
     font-family: $mainFont;
     line-height: 1.5rem;
-    /*background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../img/background-image.jpg"); bajarle opacidad a una imagen de fondo y no al resto*/
     font-weight: 300;
     color: $secondary;
     margin: 5px;
@@ -18,23 +19,7 @@ main {
     text-align: center;
 }
 
-li {
-    text-decoration: none;
-  	a {
-        color: $secondary;
-        font-weight: 600;
-
-        a:hover {
-            color: $primary;
-            transition: 1s;
-        }
-    }
-}
-
-.titulo {
-    text-decoration: none;
-}
-
+/*LINKS*/
 .aD {
     color: $secondary;
     font-weight: 600;
@@ -42,6 +27,11 @@ li {
         color: $success;
         transition: 1s;    
     }
+}
+
+.scale:hover{
+    transform: scale(1.1);
+    transition: 1s;
 }
 
 /*CARDS*/
@@ -66,12 +56,7 @@ li {
     background-color: $dark;
 }
 
-/*GEOGRAFIA AND DATOS_UTILES LISTS*/
-.ul {
-    text-align: left;
-    list-style: none;
-    padding: 10px;
-}
+/*GEOGRAFIA*/
 
 span {
     font-weight: 600;
@@ -80,8 +65,7 @@ span {
 /*IMAGES*/
 
 .img {
-    /*affects historia.html and geografia.html*/
-    max-width: 290px;
+    max-width: 300px;
     border-radius: 6px;
     border: 1px solid #ddd;
     padding: 5px;
@@ -105,7 +89,7 @@ span {
 
 /*404*/
 .img-404 {
-    height: 30vh;
+    height: 22vh;
     background-image: url(../img/seal-404.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -133,6 +117,10 @@ span {
         line-height: 2rem;
     }
 
+    .img {
+        max-width: 500px;
+    }
+
     .img-404 {
 	height: 40vh;
 	}
@@ -153,7 +141,7 @@ span {
     }
 
     .img {
-        max-width: 350px;
+        max-width: 720px;
     }
 
       .img-404 {
@@ -166,7 +154,7 @@ span {
 @media only screen and (min-width: 992px) {
 
     .img {
-        max-width: 550px;
+        max-width: 940px;
     }
 
     .titulo {
@@ -188,7 +176,5 @@ span {
 
 @media only screen and (min-width: 1200px) {
 
-    .img {
-       max-width: 650px;
-    }
+
 }
